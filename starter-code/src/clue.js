@@ -1,4 +1,37 @@
 // Characters
+// Weapons
+// Rooms' Collection
+
+// const roomsArray = ['Dinning Room',
+// 'Conservatory',
+// 'Kitchen',
+// 'Study',
+// 'Library',
+// 'Billiard Room',
+// 'Lounge',
+// 'Ballroom',
+// 'Hall',
+// 'Spa',
+// 'Living Room',
+// 'Observatory',
+// 'Theater',
+// 'Guest House',
+// 'Patio'  ];
+
+// Weapons Collection
+// const weaponsArray = [
+// 'rope',
+// 'knife',
+// 'candlestick',
+// 'dumbbell',
+// 'poison',
+// 'axe',
+// 'bat',
+// 'trophy',
+// 'pistol'
+// ];
+
+
 
 const mrGreen = {
 first_name:   "Jacob",
@@ -62,6 +95,7 @@ occupation:   "Retired Football player"
 
 
 // Characters Collection
+
 const charactersArray = [
     mrGreen, 
     drOrchid, 
@@ -71,35 +105,39 @@ const charactersArray = [
     mrMustard
 ];
 
-// Rooms' Collection
-const roomsArray = ['Dinning Room',
-'Conservatory',
-'Kitchen',
-'Study',
-'Library',
-'Billiard Room',
-'Lounge',
-'Ballroom',
-'Hall',
-'Spa',
-'Living Room',
-'Observatory',
-'Theater',
-'Guest House',
-'Patio'  ];
-
-// Weapons Collection
 const weaponsArray = [
-'rope',
-'knife',
-'candlestick',
-'dumbbell',
-'poison',
-'axe',
-'bat',
-'trophy',
-'pistol'
-];
+    {name: 'rope', weight: 10},
+    {name: 'knife', weight: 8},
+    {name: 'candlestick', weight: 2},
+    {name: 'dumbbell', weight: 30},
+    {name: 'poison', weight: 2},
+    {name: 'axe', weight: 15},
+    {name: 'bat', weight: 13},
+    {name: 'trophy', weight: 25},
+    {name: 'pistol',  weight: 20}
+    ];
+    
+    // Rooms
+    
+    const roomsArray = [
+    {name: 'Dinning Room'},
+    {name: 'Conservatory'},
+    {name: 'Kitchen'},
+    {name: 'Study'},
+    {name: 'Library'},
+    {name: 'Billiard Room'},
+    {name: 'Lounge'},
+    {name: 'Ballroom'},
+    {name: 'Hall'},
+    {name: 'Spa'},
+    {name: 'Living Room'},
+    {name: 'Observatory'},
+    {name: 'Theater'},
+    {name: 'Guest House'},
+    {name: 'Patio'}
+    ];
+    
+
 
 function randomSelector(array){
 
@@ -122,7 +160,7 @@ let misteryEnvelope = pickMistery()
 
 
 function revealMistery(array){
-return `${array[0].first_name} ${array[0].last_name} killed Mr.Boddy using the ${array[1]} in the ${array[2]}!!!!`
+return `${array[0].first_name} ${array[0].last_name} killed Mr.Boddy using the ${array[1].name} in the ${array[2].name}!!!!`
 }
 console.log(revealMistery(misteryEnvelope))
 
